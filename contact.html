@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>문의하기 — 도입 상담 신청 | THOUZER RACE Solution</title>
+  <meta name="description" content="현장 정보를 남겨주시면, 우리 현장에 맞는지·예상 활용 방식·데모/PoC 가능 여부를 검토해 안내드립니다. THOUZER 도입 상담을 신청하세요.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Noto+Serif+KR:wght@400;500;600&family=Pretendard:wght@300;400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/base.css?v=20260708a">
+  <link rel="stylesheet" href="css/custom.css?v=20260708a">
+</head>
+<body class="has-v3 has-v7 site-solid-header">
+
+  <header class="v3-header">
+    <a href="index.html" class="v3-logo">RACE</a>
+    <nav class="v3-nav">
+      <a href="company.html">회사 소개</a>
+      <a href="product.html">제품 소개</a>
+      <a href="cases.html">도입 사례</a>
+      <a href="guide.html">도입 안내</a>
+      <a href="contact.html" class="v3-nav-cta is-active">문의하기</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 상담 신청 -->
+    <section id="consultation" class="v3-consult page-intro">
+      <div class="v3-container-narrow">
+        <header class="v3-section-head">
+          <p class="v3-eyebrow">GET STARTED</p>
+          <h2 class="v3-title">우리 현장에 THOUZER를<br>적용할 수 있을지 궁금하다면</h2>
+          <p class="v3-lede">몇 가지 현장 정보만 남겨주세요.<br>도입 가능 여부, 예상 활용 방식, 데모·PoC 가능 여부를 검토해 안내드립니다.<br>구매를 바로 결정하지 않으셔도 괜찮습니다.</p>
+        </header>
+
+        <form id="consultation-form-v2" class="v2-form" novalidate>
+          <div class="v2-form-progress">
+            <span class="v2-form-progress-bar"><span class="v2-form-progress-fill" style="width: 50%"></span></span>
+            <span class="v2-form-progress-text"><span data-step-current>1</span> / <span data-step-total>2</span></span>
+          </div>
+
+          <fieldset class="v2-form-step" data-step="1">
+            <legend class="v2-form-step-title">회사 정보를 입력해주세요</legend>
+            <div class="v2-form-field">
+              <label for="v2-company">회사명 <span class="v3-privacy-req">*</span></label>
+              <input type="text" id="v2-company" name="companyName" required placeholder="예) OO제조 / OO팜">
+            </div>
+            <div class="v2-form-field">
+              <label for="v2-name">담당자명 <span class="v3-privacy-req">*</span></label>
+              <input type="text" id="v2-name" name="managerName" required autocomplete="name" placeholder="성함">
+            </div>
+            <div class="v2-form-field">
+              <label for="v2-title">직함 <span class="v2-form-step-hint">선택</span></label>
+              <input type="text" id="v2-title" name="jobTitle" placeholder="예) 대표 / 공장장 / 구매팀장">
+            </div>
+            <div class="v2-form-field">
+              <label for="v2-phone">연락처 <span class="v3-privacy-req">*</span></label>
+              <input type="tel" id="v2-phone" name="phone" required placeholder="010-0000-0000" autocomplete="tel">
+            </div>
+            <div class="v2-form-field">
+              <label for="v2-email">이메일 <span class="v3-privacy-req">*</span></label>
+              <input type="email" id="v2-email" name="email" required placeholder="name@company.com" autocomplete="email">
+            </div>
+            <div class="v2-form-actions">
+              <button type="button" class="v2-btn v2-btn-primary" data-form-next>다음</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="v2-form-step" data-step="2" hidden>
+            <legend class="v2-form-step-title">현장 정보를 입력해주세요 <span class="v2-form-step-hint v2-form-step-hint-final">마지막 단계예요!</span></legend>
+            <div class="v2-form-field">
+              <label for="v2-industry">산업 분야 <span class="v3-privacy-req">*</span></label>
+              <input type="text" id="v2-industry" name="industry" required placeholder="예) 자동차 부품 제조 / 물류센터 / 배 농가">
+            </div>
+            <div class="v2-form-field">
+              <label for="v2-item">운반이 필요한 물품 <span class="v3-privacy-req">*</span></label>
+              <input type="text" id="v2-item" name="itemToCarry" required placeholder="예) 부품 트레이 / 완제품 상자 / 수확 박스">
+            </div>
+            <div class="v2-form-field">
+              <label>현재 자동화 도입 현황 <span class="v3-privacy-req">*</span></label>
+              <div class="v2-form-options">
+                <label class="v2-form-option"><input type="radio" name="automationStatus" value="대부분 시설 자동화 도입됨" required><span>대부분의 시설 자동화 도입됨</span></label>
+                <label class="v2-form-option"><input type="radio" name="automationStatus" value="일부 자동화 도입 추진중"><span>일부 자동화 도입 추진중</span></label>
+                <label class="v2-form-option"><input type="radio" name="automationStatus" value="자동화 도입 고려 시작단계"><span>자동화 도입을 고려하는 시작단계</span></label>
+                <label class="v2-form-option"><input type="radio" name="automationStatus" value="해당사항 없음"><span>해당사항 없음</span></label>
+              </div>
+            </div>
+            <div class="v2-form-field v3-privacy">
+              <label class="v3-privacy-label">
+                <input type="checkbox" id="v2-privacyConsent" name="privacyConsent" required>
+                <span class="v3-privacy-text">개인정보 수집·이용에 동의합니다 <span class="v3-privacy-req">*</span></span>
+                <button type="button" class="v3-privacy-more" data-privacy-more aria-expanded="false">더보기</button>
+              </label>
+              <div class="v3-privacy-detail" hidden>
+                <p><strong>수집 목적</strong> · 현장 도입 검토 및 상담 안내</p>
+                <p><strong>수집 항목</strong> · 회사명, 담당자명, 직함, 연락처, 이메일, 현장·운반 정보</p>
+                <p><strong>보유 기간</strong> · 상담 완료 후 1년 (또는 신청자 요청 시 즉시 삭제)</p>
+                <p class="v3-privacy-note">동의를 거부하실 수 있으며, 거부 시 상담 진행이 어려울 수 있어요.</p>
+              </div>
+            </div>
+            <div class="v2-form-actions v2-form-actions-split">
+              <button type="button" class="v2-btn v2-btn-outline" data-form-prev>이전</button>
+              <button type="submit" class="v2-btn v2-btn-primary">무료로 현장 상담 신청하기</button>
+            </div>
+          </fieldset>
+
+          <div class="v2-form-success" data-step="success" hidden>
+            <h3>상담 신청이 접수되었습니다 ✓</h3>
+            <p>남겨주신 현장 정보를 바탕으로 도입 가능 여부를 검토한 뒤 빠르게 연락드리겠습니다.</p>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <p class="contact-info-label">전화·이메일로도 문의하실 수 있습니다</p>
+          <p class="contact-info-line"><strong>김형수 CSO</strong> ㅣ <a href="tel:010-6411-7950">010-6411-7950</a> ㅣ <a href="mailto:kurt@race.so">kurt@race.so</a></p>
+          <p class="contact-info-line">상담 가능 시간 · 월~금 09:00 – 18:00</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="v3-footer">
+    <div class="v3-container">
+      <div class="v3-footer-grid">
+        <div>
+          <p class="v3-footer-logo">RACE</p>
+          <p class="v3-footer-tag">Lead Your Race with Robotics<br>일본 1,000대+ 검증 · 현장형 자율항법 운반 로봇</p>
+        </div>
+        <div>
+          <p class="v3-footer-heading">Contact</p>
+          <p>김형수 CSO</p>
+          <p><a href="tel:010-6411-7950">010-6411-7950</a></p>
+          <p><a href="mailto:kurt@race.so">kurt@race.so</a></p>
+          <p class="v3-footer-hours">상담 가능 시간 · 월~금 09:00 – 18:00</p>
+        </div>
+        <div>
+          <p class="v3-footer-heading">Menu</p>
+          <p><a href="product.html">제품 소개</a> · <a href="cases.html">도입 사례</a><br><a href="guide.html">도입 안내</a> · <a href="company.html">회사 소개</a> · <a href="contact.html">문의하기</a></p>
+          <p class="v3-footer-partner">일본 Doog社 THOUZER 시리즈<br>한국 공식 판매 대리점</p>
+        </div>
+      </div>
+      <p class="v3-footer-biz">레이스솔루션 (RACE Solution Inc.) &nbsp;|&nbsp; 대표: 이정섭 &nbsp;|&nbsp; 개인정보관리책임자: 김형수 &nbsp;|&nbsp; 사업자등록번호: 530-86-03647<br>주소: 서울특별시 강남구 영동대로 602, 6층 제트101(삼성동, 삼성동 미켈란 107) &nbsp;|&nbsp; 문의: 김형수 CSO ㅣ 010-6411-7950 ㅣ kurt@race.so<br>본 사이트의 효과 수치는 예시 및 제조사 공개 자료 기준이며, 실제 도입 효과는 현장 조건에 따라 달라질 수 있습니다.</p>
+      <p class="v3-footer-copy">&copy; 2026 RACE Solution Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
