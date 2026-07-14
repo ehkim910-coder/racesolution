@@ -903,3 +903,30 @@ body.has-v7 .v5-worry-a,
 .safety-grid .mode-img video{ object-fit:contain; }
 @media (max-width:720px){ .safety-grid{ grid-template-columns:1fr; } }
 @media (max-width:860px){ .mode-grid{ grid-template-columns:1fr; } }
+
+
+/* ============================================================
+   모바일 헤더 — 로고 한 줄 + 햄버거(☰) 메뉴
+   ============================================================ */
+.v3-logo{white-space:nowrap;}
+.v3-nav-toggle{display:none;}
+@media (max-width:768px){
+  .v3-logo{font-size:17px;letter-spacing:.06em;}
+  .v3-nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:auto;background:none;border:0;font-size:26px;line-height:1;color:var(--v3-text);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+  .v3-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin:0;padding:6px 20px 16px;background:#fff;border-top:1px solid var(--v3-line);box-shadow:0 16px 34px rgba(0,0,0,.14);}
+  .v3-nav.is-open{display:flex;}
+  .v3-nav a{padding:15px 4px;border-bottom:1px solid var(--v3-line);font-size:16px;}
+  .v3-nav a:last-child{border-bottom:0;}
+  .v3-nav-cta{margin-top:12px;align-self:flex-start;}
+}
+@media (max-width:360px){
+  .v3-logo{font-size:15px;letter-spacing:.04em;}
+}
+/* 햄버거 아이콘 — CSS 3바 → ✕ (폰트 글리프 비의존) */
+.v3-nav-toggle > i,.v3-nav-toggle > i::before,.v3-nav-toggle > i::after{content:"";display:block;width:22px;height:2px;background:var(--v3-text);border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+.v3-nav-toggle > i{position:relative}
+.v3-nav-toggle > i::before{position:absolute;left:0;top:-7px}
+.v3-nav-toggle > i::after{position:absolute;left:0;top:7px}
+.v3-nav-toggle.is-open > i{background:transparent}
+.v3-nav-toggle.is-open > i::before{transform:translateY(7px) rotate(45deg)}
+.v3-nav-toggle.is-open > i::after{transform:translateY(-7px) rotate(-45deg)}

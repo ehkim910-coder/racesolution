@@ -150,3 +150,13 @@
   });
   document.addEventListener('dragstart', (e) => { if (isMedia(e.target)) e.preventDefault(); });
 })();
+
+/* === 모바일 헤더 햄버거 메뉴 === */
+(() => {
+  const toggle = document.querySelector('.v3-nav-toggle');
+  const nav = document.querySelector('.v3-nav');
+  if (!toggle || !nav) return;
+  const set = (open) => { nav.classList.toggle('is-open', open); toggle.classList.toggle('is-open', open); toggle.setAttribute('aria-expanded', String(open)); };
+  toggle.addEventListener('click', () => set(!nav.classList.contains('is-open')));
+  nav.addEventListener('click', (e) => { if (e.target.tagName === 'A') set(false); });
+})();
