@@ -1065,7 +1065,9 @@ body.has-v7 .v5-worry-a,
   #cost .cost-copy .cost-arrow{ padding-left:0; text-indent:0; }
   /* 계산기 카드 전체 텍스트 가운데 정렬 (타이틀·안내·라벨·수식) */
   #cost .calc{ text-align:center; }
+  #cost .calc-field input{ text-align:right; }         /* 입력 기본값 숫자 오른쪽 정렬 */
   /* 계산기 강조행 — THOUZER는 크기 유지, 나머지 축소 + 줄바꿈 */
+  #cost .calc-out-row.hot > span{ text-align:left; }    /* 강조행 라벨 왼쪽 정렬 */
   #cost .calc-out-row.hot .cs-rest{ font-size:11px; }
   #cost .calc-out-row.hot em{ font-size:10.5px; }
   /* 예상 회수기간 — 라벨 한 줄 고정, 값(안내문) 두 줄로 */
