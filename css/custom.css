@@ -1089,3 +1089,19 @@ body.has-v7 .v5-worry-a,
   .process-sec .flow-step::before{ content:""; position:absolute; left:30px; top:-10px; width:2px; height:10px; background:var(--v3-line); }
   .process-sec .flow-step:first-child::before{ display:none; }
 }
+
+/* ============================================================
+   WORRIES 카드 — PC 3열 한 줄 / 모바일 카드 높이 축소
+   ============================================================ */
+/* PC: 3장 카드를 한 줄(가로 3열)로 */
+@media (min-width:769px){
+  .v5-worry-list{ flex-direction:row; gap:16px; align-items:stretch; }
+  .v5-worry-list .v5-worry-card{ flex:1 1 0; min-width:0; padding:24px 22px; }
+}
+/* 모바일: 세로 스택 유지 + 카드 높이 축소(패딩·내부 간격 최소화) */
+@media (max-width:768px){
+  .v5-worry-card{ padding:15px 18px !important; }
+  .v5-worry-num{ margin-bottom:5px !important; }
+  .v5-worry-q{ margin:0 0 8px !important; padding-bottom:8px !important; line-height:1.35 !important; }
+  .v5-worry-a{ line-height:1.5 !important; }
+}
