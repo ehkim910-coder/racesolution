@@ -16,7 +16,7 @@
   --v3-accent:    #1f6390;   /* 스틸 블루 (포인트) */
   --v3-accent-soft:#3b86b8;
   --v3-cream:     #eef3f7;   /* 연한 블루그레이 */
-  --v3-dark:      #0e1b26;   /* 딥 네이비 (다크 섹션) */
+  --v3-dark:      #0a0a0c;   /* 다크 섹션 배경 = 검정 */
 
   /* v2 폼 토큰 */
   --color-bg:        #f4f7fa;
@@ -490,7 +490,7 @@ body.has-v7 .v3-consult{
   --v3-accent:#13324f;      /* 딥 네이비 */
   --v3-accent-soft:#3b5f83;
   --v3-cream:#eceef0;
-  --v3-dark:#0f2438;        /* 네이비 다크 밴드 */
+  --v3-dark:#0a0a0c;        /* 다크 섹션 배경 = 검정 */
   --color-bg:#f4f4f2; --color-bg-alt:#fff; --color-text:#15202b;
   --color-text-sub:#5f6b76; --color-accent:#13324f; --color-line:#e3e6e6;
   --ink:#15202b;
@@ -602,7 +602,7 @@ body.has-v7 .v3-consult{
 
 /* ⑦ 실적(PROVEN) → 다크 네이비 + 큰 숫자 임팩트 */
 .v5-exp-eyebrow{ color:#c3d3e2 !important; text-shadow:0 1px 6px rgba(8,20,34,.7); }
-.v5-exp-pre{ margin:16px 0 -2px; font-size:14px; font-weight:600; letter-spacing:.16em; color:rgba(255,255,255,.85); text-shadow:0 1px 8px rgba(8,20,34,.85); }
+.v5-exp-num .v5-exp-pre{ font-size:clamp(1.05rem,3.4vw,1.75rem); font-weight:600; letter-spacing:.01em; color:rgba(255,255,255,.92) !important; text-shadow:0 2px 12px rgba(8,20,34,.75); align-self:baseline; }
 .v5-exp-num{ color:#fff !important; text-shadow:0 2px 18px rgba(8,20,34,.8),0 1px 3px rgba(8,20,34,.7); }
 .v5-exp-num span{ color:var(--amber) !important; text-shadow:0 2px 14px rgba(8,20,34,.7); }
 .v5-exp-lead{ color:#fff !important; text-shadow:0 1px 8px rgba(8,20,34,.85); }
