@@ -1105,3 +1105,16 @@ body.has-v7 .v5-worry-a,
   .v5-worry-q{ margin:0 0 8px !important; padding-bottom:8px !important; line-height:1.35 !important; }
   .v5-worry-a{ line-height:1.5 !important; }
 }
+
+/* ============================================================
+   제품 히어로 · GET STARTED 버튼 — 모바일 2개 한 줄 (PC 영향 없음)
+   ============================================================ */
+@media (max-width:768px){
+  .prod-hero-cta,
+  .cta-band-btns{ flex-wrap:nowrap; gap:8px; }
+  .prod-hero-cta .v3-btn,
+  .cta-band-btns .v3-btn{ flex:1 1 0; min-width:0; justify-content:center; white-space:nowrap;
+    padding:12px 12px !important; font-size:12.5px !important; gap:6px; }
+  .prod-hero-cta .v3-btn span,
+  .cta-band-btns .v3-btn span{ width:20px; height:20px; flex:0 0 20px; font-size:11px; }
+}
