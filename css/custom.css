@@ -602,6 +602,7 @@ body.has-v7 .v3-consult{
 
 /* ⑦ 실적(PROVEN) → 다크 네이비 + 큰 숫자 임팩트 */
 .v5-exp-eyebrow{ color:#c3d3e2 !important; text-shadow:0 1px 6px rgba(8,20,34,.7); }
+.v5-exp-pre{ margin:16px 0 -2px; font-size:14px; font-weight:600; letter-spacing:.16em; color:rgba(255,255,255,.85); text-shadow:0 1px 8px rgba(8,20,34,.85); }
 .v5-exp-num{ color:#fff !important; text-shadow:0 2px 18px rgba(8,20,34,.8),0 1px 3px rgba(8,20,34,.7); }
 .v5-exp-num span{ color:var(--amber) !important; text-shadow:0 2px 14px rgba(8,20,34,.7); }
 .v5-exp-lead{ color:#fff !important; text-shadow:0 1px 8px rgba(8,20,34,.85); }
@@ -1038,7 +1039,7 @@ body.has-v7 .v5-worry-a,
   #proven .stat-note{ font-size:8px; white-space:nowrap; letter-spacing:-.02em; }
 }
 /* GLOBAL CLIENTS 배경 흰색 — 위 THE ANSWER(그레이)와 구분 (PC·모바일 공통) */
-.global-clients{ background:var(--v3-bg-alt); }
+.global-clients{ background:var(--v3-bg); }   /* 히어로(다크)→global(그레이)→cases(흰) 대비 */
 
 /* ============================================================
    도입 안내(guide.html) 모바일 전용 조정 · PC(>768px) 영향 없음
