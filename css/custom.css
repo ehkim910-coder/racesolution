@@ -487,14 +487,14 @@ body.has-v7 .v3-consult{
   --v3-text:#15202b;
   --v3-text-sub:#5f6b76;
   --v3-line:rgba(21,32,43,.12);
-  --v3-accent:#13324f;      /* 딥 네이비 */
+  --v3-accent:#0a0a0c;      /* 검정 (기존 딥 네이비 → 검정 통일) */
   --v3-accent-soft:#3b5f83;
   --v3-cream:#eceef0;
   --v3-dark:#0a0a0c;        /* 다크 섹션 배경 = 검정 */
   --color-bg:#f4f4f2; --color-bg-alt:#fff; --color-text:#15202b;
-  --color-text-sub:#5f6b76; --color-accent:#13324f; --color-line:#e3e6e6;
+  --color-text-sub:#5f6b76; --color-accent:#0a0a0c; --color-line:#e3e6e6;
   --ink:#15202b;
-  --navy:#13324f;
+  --navy:#0a0a0c;
   --amber:#f5a623;          /* 포컬 액센트 — 안전 앰버 */
   --amber-press:#e0951a;
   --amber-soft:rgba(245,166,35,.16);
