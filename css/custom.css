@@ -954,3 +954,15 @@ body.has-v7 .v5-worry-a,
   .press-slider{min-width:0;}
   .press-track{min-width:0;}
 }
+/* ============================================================
+   모바일 섹션 제목/서브 크기 통일 · WORRIES 기준 (PC 영향 없음)
+   ============================================================ */
+@media (max-width:768px){
+  .v3-title{font-size:21px !important;line-height:1.42 !important;}
+  .v3-lede{font-size:15px !important;line-height:1.7 !important;}
+}
+/* OUR VISION 대형 영문 + 제품 문제→해결 대형 문구도 21px 통일 (모바일 전용) */
+@media (max-width:768px){
+  .vision-en{font-size:21px !important;line-height:1.42 !important;}
+  .prob-solution{font-size:21px !important;line-height:1.42 !important;}
+}
