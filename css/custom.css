@@ -292,6 +292,9 @@ body.has-v7 .v3-consult{
 .cost-30{ padding:16px 18px;background:rgba(255,106,26,.08);border-left:3px solid var(--cta);border-radius:0 10px 10px 0; }
 .cost-30 strong{ color:var(--cta) !important; }
 .cost-desc{ font-size:14px !important;color:var(--v3-text-sub) !important; }
+/* 좌측 카피 가운데 정렬 (PC·모바일 공통) */
+#cost .cost-copy{ text-align:center; }
+#cost .cost-copy .cost-arrow{ padding-left:0;text-indent:0; }
 
 /* 우: 계산기 카드 */
 .calc{ background:#fff;border:1px solid var(--v3-line);border-radius:16px;padding:26px 24px;box-shadow:0 16px 44px -22px rgba(14,27,38,.3); }
@@ -1059,10 +1062,6 @@ body.has-v7 .v5-worry-a,
   /* 괄호 보조 문구 — 글자 축소 후 한 줄 고정 */
   #compare .compare-table .cmp-sub{ display:inline-block;font-size:8.5px;white-space:nowrap;line-height:1.2;margin-top:1px; }
 
-  /* COST SAVING — 좌측 카피 가운데 정렬 (헤드라인·문단) */
-  #cost .cost-copy .cost-h{ text-align:center; }
-  #cost .cost-copy p{ text-align:center; }
-  #cost .cost-copy .cost-arrow{ padding-left:0; text-indent:0; }
   /* 계산기 강조행 — THOUZER는 크기 유지, 나머지 축소 + 줄바꿈 */
   #cost .calc-out-row.hot .cs-rest{ font-size:11px; }
   #cost .calc-out-row.hot em{ font-size:10.5px; }
