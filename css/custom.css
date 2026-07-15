@@ -690,7 +690,7 @@ body.has-v7 .v5-worry-a,
 .cred-ic{ display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:11px;background:var(--amber);color:var(--ink);font-size:18px;font-weight:800; }
 .cred-badge p{ margin:0;font-size:14px;font-weight:700;line-height:1.55;color:#fff;word-break:keep-all; }
 @media (max-width:820px){ .cred-wall{ grid-template-columns:repeat(2,1fr); } }
-@media (max-width:460px){ .cred-wall{ grid-template-columns:1fr; } }
+@media (max-width:460px){ .cred-wall{ grid-template-columns:repeat(2,1fr); } }
 
 /* 글로벌 고객사 로고 마퀴 */
 .global-clients .v3-section-head{ margin-bottom:8px; }
@@ -965,4 +965,65 @@ body.has-v7 .v5-worry-a,
 @media (max-width:768px){
   .vision-en{font-size:21px !important;line-height:1.42 !important;}
   .prob-solution{font-size:21px !important;line-height:1.42 !important;}
+}
+
+/* ============================================================
+   제품 소개(product.html) 모바일 전용 조정 · PC(>768px) 영향 없음
+   ============================================================ */
+/* LINE-UP 모델 탭 — 기본 숨김(PC), 모바일에서만 노출 */
+.lineup-tabs{ display:none; }
+@media (max-width:768px){
+  /* 1) 문제 칩 3개 한 줄 배치 (설비 부담·인력난·도입 리스크) */
+  .prob-chips{ flex-wrap:nowrap; gap:7px; }
+  .prob-chip{ font-size:12.5px; padding:8px 13px; white-space:nowrap; }
+
+  /* 2) LINE-UP — 모델 탭 노출 + 선택 카드 1개만 표시(기본 STANDARD) */
+  .lineup-tabs{
+    display:flex; gap:6px; justify-content:center;
+    max-width:340px; margin:0 auto 22px; padding:5px;
+    background:var(--v3-cream); border:1px solid var(--v3-line); border-radius:999px;
+  }
+  .lineup-tab{
+    flex:1; padding:10px 4px; border:0; background:none; cursor:pointer;
+    font-family:inherit; font-size:12.5px; font-weight:800; letter-spacing:.05em;
+    color:var(--v3-text-sub); border-radius:999px;
+    transition:background .2s ease, color .2s ease; -webkit-tap-highlight-color:transparent;
+  }
+  .lineup-tab.is-active{ background:var(--navy); color:#fff; }
+  .lineup-grid-3 .lineup-card{ display:none; }
+  .lineup-grid-3 .lineup-card.is-active{ display:block; }
+
+  /* 3) TYPE COMPARISON 표 — 가로 스크롤 없이 한 화면에 */
+  #typecompare .compare-wrap{ overflow-x:hidden; box-shadow:0 10px 30px -18px rgba(14,27,38,.28); }
+  #typecompare .compare-table{ min-width:0; }
+  #typecompare .compare-table th,
+  #typecompare .compare-table td{ padding:10px 5px; font-size:11.5px; white-space:normal; }
+  #typecompare .compare-table thead th{ font-size:11px; }
+  #typecompare .compare-table .compare-crit{ font-size:11.5px; }
+  #typecompare .compare-table .compare-crit em{ font-size:9.5px; margin-top:1px; }
+
+  /* 4) GET STARTED 신뢰 배지 — 2줄이어도 뚱뚱하지 않게 깔끔한 라운드 카드 */
+  .cta-trust{
+    display:block; max-width:270px; margin:0 auto 24px;
+    padding:11px 18px; border-radius:14px;
+    font-size:12.5px; line-height:1.35; text-align:center;
+  }
+  .cta-trust .cta-trust-item{ display:block; }
+  .cta-trust .cta-trust-sep{ display:none; }
+  .cta-trust .cta-trust-item:first-child{
+    margin-bottom:6px; padding-bottom:6px;
+    border-bottom:1px solid rgba(245,166,35,.25);
+  }
+}
+
+/* ============================================================
+   도입 사례(cases.html) 모바일 전용 조정 · PC(>768px) 영향 없음
+   ============================================================ */
+@media (max-width:768px){
+  /* PROVEN 실적 칩 3개 — 세로 적층 대신 한 줄에 축소 배치 */
+  #proven .statband{ grid-template-columns:repeat(3,1fr); gap:7px; margin-top:26px; }
+  #proven .statband-item{ padding:13px 8px; border-radius:14px; text-align:center; }
+  #proven .statband-num{ font-size:19px; letter-spacing:-.02em; }
+  #proven .statband-label{ margin-top:7px; font-size:11px; line-height:1.3; letter-spacing:0; word-break:keep-all; }
+  #proven .statband-desc{ margin-top:5px; font-size:9.5px; line-height:1.4; }
 }
