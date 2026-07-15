@@ -516,17 +516,17 @@ body.has-v7 .v3-consult{
 .solve-quote em,.compare-key em,.price-key em{ color:var(--navy) !important; }
 .cost-emph strong{ color:var(--amber-press) !important; }
 
-/* eyebrow — 그레이 라벨 + 앰버 점 + 우측 헤어라인 */
+/* eyebrow — 좌측 앰버 액센트 바 + 대문자 라벨 (점·우측 헤어라인 제거) */
 .v3-eyebrow{ color:var(--label) !important; }
-.v3-section-head .v3-eyebrow{ position:relative; }
+.v3-section-head .v3-eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  letter-spacing:.2em; position:relative;
+}
 .v3-section-head .v3-eyebrow::before{
-  content:"";display:inline-block;width:7px;height:7px;border-radius:50%;
-  background:var(--amber);vertical-align:middle;margin-right:11px;
+  content:""; flex:0 0 auto; width:3px; height:12px;
+  border-radius:2px; background:var(--amber);
 }
-.v3-section-head .v3-eyebrow::after{
-  content:"";display:inline-block;width:22px;height:1px;background:currentColor;
-  opacity:.5;vertical-align:middle;margin-left:12px;
-}
+.v3-section-head .v3-eyebrow::after{ content:none; }
 .v3-section-head{ margin-bottom:clamp(36px,5vw,56px); }
 .v7-hero-lead{ letter-spacing:.16em; }
 
