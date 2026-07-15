@@ -1037,6 +1037,11 @@ body.has-v7 .v5-worry-a,
   #proven .stat-sep{ display:none; }
   /* (제조사 공개 자료 기준) — 한 줄에 들어오게 축소 */
   #proven .stat-note{ font-size:8px; white-space:nowrap; letter-spacing:-.02em; }
+  /* 히어로 큰 숫자 "누적판매 1,000대 +" — 전체 축소 후 한 줄 고정 */
+  #proven .v5-exp-num{ font-size:46px; gap:6px; white-space:nowrap; flex-wrap:nowrap; }
+  #proven .v5-exp-num > *{ flex-shrink:0; white-space:nowrap; }
+  #proven .v5-exp-num .v5-exp-pre{ font-size:15px; letter-spacing:0; }
+  #proven .v5-exp-num > span:not(.v5-exp-pre){ font-size:15px; letter-spacing:.12em; }
 }
 /* GLOBAL CLIENTS 배경 흰색 — 위 THE ANSWER(그레이)와 구분 (PC·모바일 공통) */
 .global-clients{ background:var(--v3-bg); }   /* 히어로(다크)→global(그레이)→cases(흰) 대비 */
