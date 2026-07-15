@@ -1027,3 +1027,5 @@ body.has-v7 .v5-worry-a,
   #proven .statband-label{ margin-top:7px; font-size:11px; line-height:1.3; letter-spacing:0; word-break:keep-all; }
   #proven .statband-desc{ margin-top:5px; font-size:9.5px; line-height:1.4; }
 }
+/* GLOBAL CLIENTS 배경 흰색 — 위 THE ANSWER(그레이)와 구분 (PC·모바일 공통) */
+.global-clients{ background:var(--v3-bg-alt); }
