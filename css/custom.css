@@ -1059,8 +1059,16 @@ body.has-v7 .v5-worry-a,
   /* 괄호 보조 문구 — 글자 축소 후 한 줄 고정 */
   #compare .compare-table .cmp-sub{ display:inline-block;font-size:8.5px;white-space:nowrap;line-height:1.2;margin-top:1px; }
 
-  /* COST SAVING — 좌측 카피 헤드라인 가운데 정렬 */
+  /* COST SAVING — 좌측 카피 가운데 정렬 (헤드라인·문단) */
   #cost .cost-copy .cost-h{ text-align:center; }
+  #cost .cost-copy p{ text-align:center; }
+  #cost .cost-copy .cost-arrow{ padding-left:0; text-indent:0; }
+  /* 계산기 강조행 — THOUZER는 크기 유지, 나머지 축소 + 줄바꿈 */
+  #cost .calc-out-row.hot .cs-rest{ font-size:11px; }
+  #cost .calc-out-row.hot em{ font-size:10.5px; }
+  /* 예상 회수기간 — 라벨 한 줄 고정, 값(안내문) 두 줄로 */
+  #cost .calc-out-row.consult > span{ white-space:nowrap; }
+  #cost .calc-out-row.consult .calc-consult{ display:inline-block; text-align:right; line-height:1.35; }
 
   /* HOW IT WORKS — 도입 프로세스를 세로 스텝퍼로 깔끔하게 정리 */
   .process-sec .flow{ flex-direction:column; align-items:stretch; gap:10px; margin:28px auto 0; max-width:320px; }
