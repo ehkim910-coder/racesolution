@@ -1051,6 +1051,13 @@ body.has-v7 .v5-worry-a,
   #compare .compare-table td{ padding:9px 4px; font-size:10.5px; white-space:normal; word-break:keep-all; line-height:1.32; }
   #compare .compare-table thead th{ font-size:10.5px; }
   #compare .compare-table .compare-crit{ font-size:10.5px; }
+  /* THOUZER 열만 살짝 넓혀 경쟁 3열은 축소 — 긴 라벨 수용 */
+  #compare .compare-table th:nth-child(2),#compare .compare-table td:nth-child(2),
+  #compare .compare-table th:nth-child(3),#compare .compare-table td:nth-child(3),
+  #compare .compare-table th:nth-child(4),#compare .compare-table td:nth-child(4){ width:19%; }
+  #compare .compare-table th:last-child,#compare .compare-table td.is-main{ width:23%; }
+  /* 괄호 보조 문구 — 글자 축소 후 한 줄 고정 */
+  #compare .compare-table .cmp-sub{ display:inline-block;font-size:8.5px;white-space:nowrap;line-height:1.2;margin-top:1px; }
 
   /* COST SAVING — 좌측 카피 헤드라인 가운데 정렬 */
   #cost .cost-copy .cost-h{ text-align:center; }
