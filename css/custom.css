@@ -930,3 +930,27 @@ body.has-v7 .v5-worry-a,
 .v3-nav-toggle.is-open > i{background:transparent}
 .v3-nav-toggle.is-open > i::before{transform:translateY(7px) rotate(45deg)}
 .v3-nav-toggle.is-open > i::after{transform:translateY(-7px) rotate(-45deg)}
+/* ============================================================
+   모바일 전용 조정 · PC(>768px) 영향 없음
+   ============================================================ */
+.br-mo{display:none;}                       /* 모바일 전용 줄바꿈 (PC는 숨김) */
+.v3-sticky-cta{display:none !important;}     /* 하단 고정 CTA 버튼 제거 */
+@media (max-width:768px){
+  .br-mo{display:inline;}
+  /* 히어로 메인/서브 문구 축소 (되도록 2줄) */
+  .v7-hero-headline{font-size:22px;line-height:1.42;}
+  .v7-hero-subline{font-size:13px;line-height:1.55;}
+  /* 햄버거 드롭다운 문의하기 버튼 여백 */
+  .v3-nav .v3-nav-cta{padding:12px 26px;}
+  /* WORRIES 제목 축소 */
+  .worry-title{font-size:21px;line-height:1.42;}
+  /* WORRIES 업종 칩 한 줄 나열 */
+  .worry-chips{flex-wrap:nowrap;gap:6px;}
+  .worry-chips span{font-size:11px;padding:6px 9px;white-space:nowrap;}
+}
+/* PRESS 모바일 오버플로우 방지 (가로 슬라이더가 페이지 폭을 넓히지 않게) */
+@media (max-width:768px){
+  .press{overflow-x:hidden;}
+  .press-slider{min-width:0;}
+  .press-track{min-width:0;}
+}
