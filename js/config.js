@@ -4,4 +4,4 @@
      설정 방법은 google-apps-script/SETUP.md 참고.
      비워두면 폼 제출 시 콘솔에만 기록됩니다(저장 안 됨).
    ============================================================ */
-window.LEAD_ENDPOINT = ''; // 예: 'https://script.google.com/macros/s/XXXXXXXX/exec'
+window.LEAD_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxeXSd7MYL6INnpmZI0lnj0GhSe3lHf_DNOWoKrxJu7zQKdRA8lJC4U0d-9EydUrP-S/exec';
